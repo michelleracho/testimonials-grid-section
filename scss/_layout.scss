@@ -1,20 +1,27 @@
 .container {
-  // width: 90%;
-  width: 85%;
+  width: 95%;
   margin: 5rem auto;
+
+  @include breakpoint($bp-lg) {
+  }
+
+  @include breakpoint($bp-md-2) {
+    width: 85%;
+  }
 }
 
 .testimonials {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2.5rem;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-bottom: 1rem;
-
-  // position: absolute;
-  // bottom: 1rem;
+  position: absolute;
+  bottom: 1rem;
 
   a {
     color: hsl(228, 45%, 44%);

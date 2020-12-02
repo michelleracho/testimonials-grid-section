@@ -18,7 +18,7 @@ body {
   height: 100%;
   @include flexCenter;
 
-  max-width: 375px;
+  width: 100%;
+  max-width: $bp-lg;
   margin: 0 auto;
-  border: 1px solid;
 }

@@ -38,3 +38,9 @@
     border: 2.55px solid $color;
   }
 }
+
+@mixin breakpoint($bp) {
+  @media only screen and (max-width: $bp) {
+    @content;
+  }
+}
