@@ -1,0 +1,41 @@
+.card {
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.card--1 {
+  background-color: $color-primary-violet;
+  @include textColor($color-neutral-grayish-blue);
+}
+
+.card--2 {
+  background-color: $color-primary-grayish-blue;
+  @include textColor($color-primary-white);
+}
+
+.card--3,
+.card--5 {
+  background-color: $color-primary-white;
+  @include textColor($color-primary-grayish-blue);
+}
+
+.card--3 {
+}
+
+.card--4 {
+  background-color: $color-primary-blackish-blue;
+  @include textColor($color-neutral-light-gray);
+}
+
+.card--5 {
+}
+
+.card__heading {
+}
+
+.card__msg {
+}

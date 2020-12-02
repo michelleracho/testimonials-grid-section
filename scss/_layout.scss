@@ -1,0 +1,21 @@
+.container {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.testimonials {
+  list-style: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  // position: absolute;
+  // bottom: 1rem;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #ecf2f8;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 375px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+.container {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.testimonials {
+  list-style: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.card {
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.card--1 {
+  background-color: #7541c8;
+}
+
+.card--1 .author__name {
+  color: #ecf2f8;
+}
+
+.card--1 .author__title {
+  color: rgba(236, 242, 248, 0.5);
+}
+
+.card--1 .card__heading {
+  color: #ecf2f8;
+}
+
+.card--1 .card__msg {
+  color: rgba(236, 242, 248, 0.7);
+}
+
+.card--2 {
+  background-color: #48556a;
+}
+
+.card--2 .author__name {
+  color: white;
+}
+
+.card--2 .author__title {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card--2 .card__heading {
+  color: white;
+}
+
+.card--2 .card__msg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card--3,
+.card--5 {
+  background-color: white;
+}
+
+.card--3 .author__name,
+.card--5 .author__name {
+  color: #48556a;
+}
+
+.card--3 .author__title,
+.card--5 .author__title {
+  color: rgba(72, 85, 106, 0.5);
+}
+
+.card--3 .card__heading,
+.card--5 .card__heading {
+  color: #48556a;
+}
+
+.card--3 .card__msg,
+.card--5 .card__msg {
+  color: rgba(72, 85, 106, 0.7);
+}
+
+.card--4 {
+  background-color: #19212e;
+}
+
+.card--4 .author__name {
+  color: #cfcfcf;
+}
+
+.card--4 .author__title {
+  color: rgba(207, 207, 207, 0.5);
+}
+
+.card--4 .card__heading {
+  color: #cfcfcf;
+}
+
+.card--4 .card__msg {
+  color: rgba(207, 207, 207, 0.7);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,34 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin imgDefault {
+  width: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@mixin textColor($color) {
+  .author__name {
+    color: $color;
+  }
+
+  .author__title {
+    color: rgba($color, 0.5);
+  }
+
+  .card__heading {
+    color: $color;
+  }
+
+  .card__msg {
+    color: rgba($color, 0.7);
+  }
+}

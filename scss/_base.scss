@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: $font-default;
+  background-color: $color-neutral-grayish-blue;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  @include flexCenter;
+
+  max-width: 375px;
+  margin: 0 auto;
+  border: 1px solid;
+}
