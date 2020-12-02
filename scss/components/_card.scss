@@ -1,26 +1,39 @@
 .card {
-  padding: 2.5rem;
+  padding: 3rem;
   border-radius: 0.8rem;
 
   &:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 }
 
 .card--1 {
-  background-color: $color-primary-violet;
+  background: url(/images/bg-pattern-quotation.svg) no-repeat top right 10%,
+    $color-primary-violet;
   @include textColor($color-neutral-grayish-blue);
+
+  .author__photo {
+    @include photoBorder(rgba($color-primary-white, 0.3));
+  }
 }
 
 .card--2 {
   background-color: $color-primary-grayish-blue;
   @include textColor($color-primary-white);
+
+  .author__photo {
+    @include photoBorder(transparent);
+  }
 }
 
 .card--3,
 .card--5 {
   background-color: $color-primary-white;
   @include textColor($color-primary-grayish-blue);
+
+  .author__photo {
+    @include photoBorder(transparent);
+  }
 }
 
 .card--3 {
@@ -29,13 +42,21 @@
 .card--4 {
   background-color: $color-primary-blackish-blue;
   @include textColor($color-neutral-light-gray);
+
+  .author__photo {
+    @include photoBorder($color-primary-violet);
+  }
 }
 
 .card--5 {
 }
 
 .card__heading {
+  font-size: 1.97rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
 .card__msg {
+  line-height: 1.5;
 }

@@ -1,8 +1,32 @@
 .author {
+  display: grid;
+  grid-template-columns: 3.25rem auto;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 1.4rem;
+  // row-gap: 0;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.author__photo {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+  }
 }
 
 .author__name {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .author__title {
+  font-size: 1.1rem;
+  font-weight: 500;
 }

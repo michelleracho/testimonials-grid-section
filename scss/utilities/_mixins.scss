@@ -32,3 +32,9 @@
     color: rgba($color, 0.7);
   }
 }
+
+@mixin photoBorder($color) {
+  img {
+    border: 2.55px solid $color;
+  }
+}

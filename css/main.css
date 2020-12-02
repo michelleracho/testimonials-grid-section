@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 5rem auto;
 }
 
@@ -55,17 +55,57 @@ body {
   color: #3e52a3;
 }
 
+.author {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3.25rem auto;
+      grid-template-columns: 3.25rem auto;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  -webkit-column-gap: 1.4rem;
+          column-gap: 1.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.author__photo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  width: 100%;
+}
+
+.author__photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.author__name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.author__title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 .card {
-  padding: 2.5rem;
+  padding: 3rem;
   border-radius: 0.8rem;
 }
 
 .card:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .card--1 {
-  background-color: #7541c8;
+  background: url(/images/bg-pattern-quotation.svg) no-repeat top right 10%, #7541c8;
 }
 
 .card--1 .author__name {
@@ -82,6 +122,10 @@ body {
 
 .card--1 .card__msg {
   color: rgba(236, 242, 248, 0.7);
+}
+
+.card--1 .author__photo img {
+  border: 2.55px solid rgba(255, 255, 255, 0.3);
 }
 
 .card--2 {
@@ -102,6 +146,10 @@ body {
 
 .card--2 .card__msg {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.card--2 .author__photo img {
+  border: 2.55px solid transparent;
 }
 
 .card--3,
@@ -129,6 +177,11 @@ body {
   color: rgba(72, 85, 106, 0.7);
 }
 
+.card--3 .author__photo img,
+.card--5 .author__photo img {
+  border: 2.55px solid transparent;
+}
+
 .card--4 {
   background-color: #19212e;
 }
@@ -147,5 +200,19 @@ body {
 
 .card--4 .card__msg {
   color: rgba(207, 207, 207, 0.7);
+}
+
+.card--4 .author__photo img {
+  border: 2.55px solid #7541c8;
+}
+
+.card__heading {
+  font-size: 1.97rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.card__msg {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */
